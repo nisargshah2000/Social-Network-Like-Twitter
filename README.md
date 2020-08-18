@@ -1,4 +1,4 @@
-# Soical-Network Like Twitter
+### Twitter Clone With Admin Dashboard
 
 ## To run this project, do the following :
 
@@ -33,4 +33,36 @@ cd React-Frontend/
 npm i
 npm start
 ```
+
+### Nav Bar (Admin is only visible if you are an admin)
+<img src="images/Navbar.png" />
+<br />
+
+### Sign In Page
+<img src="images/Sign-In.png" />
+<br />
+
+### Sign Up Page
+<img src="images/Sign-up.png" />
+<br />
+
+### Home Page
+<img src="images/Home.png" />
+<br />
+
+### On Clicking Read More
+<img src="images/Read-More.png" />
+<br />
+
+### Like and Comment
+<img src="images/Like-And-Comment.png" />
+<br />
+
+### View Profile
+<img src="images/Profile.png" />
+<br />
+
+### Password Reset
+<img src="images/Password-Reset.png" />
+<br />
 

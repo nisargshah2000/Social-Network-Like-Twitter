@@ -1,5 +1,7 @@
 ### Twitter Clone With Admin Dashboard
 
+[Deployed Website](https://myowntwitterapp.herokuapp.com/)
+
 ## To run this project, do the following :
 
 ### create .env file in React-Frontend Folder with the following code (update credentials).

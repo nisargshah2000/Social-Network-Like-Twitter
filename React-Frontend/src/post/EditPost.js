@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { singlePost, update } from "./apiPost";
 import { isAuthenticated } from "../auth/index";
-import DefaultPostImage from "../images/himalaya.jpg";
+import DefaultPostImage from "../images/twitter.jpg";
 import { Redirect } from "react-router-dom";
 
 function EditPost(props) {
@@ -179,7 +179,7 @@ function EditPost(props) {
                     style={{ height: "200px", width: "auto" }}
                     src={`${process.env.REACT_APP_API_URL}/post/photo/${
                         post._id
-                    }?${new Date().getTime()}`}
+                        }?${new Date().getTime()}`}
                     onError={(i) => (i.target.src = `${DefaultPostImage}`)}
                     alt={post.title}
                 />

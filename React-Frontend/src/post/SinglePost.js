@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { singlePost, remove, unlike, like } from "./apiPost";
-import DefaultPostImage from "../images/himalaya.jpg";
+import DefaultPostImage from "../images/twitter.jpg";
 import { Link, Redirect } from "react-router-dom";
 import { isAuthenticated } from "../auth/index";
 import Comment from "./Comment";
@@ -99,7 +99,7 @@ function SinglePost(props) {
                     style={{ height: "500px", width: "100%" }}
                     src={`${process.env.REACT_APP_API_URL}/post/photo/${
                         post._id
-                    }?${new Date().getTime()}`}
+                        }?${new Date().getTime()}`}
                     onError={(i) => (i.target.src = `${DefaultPostImage}`)}
                     alt={post.title}
                 />
@@ -113,14 +113,14 @@ function SinglePost(props) {
                         {likes} Likes
                     </h3>
                 ) : (
-                    <h3 onClick={toggleLike}>
-                        <i
-                            className="fa fa-thumbs-up text-warning bg-dark"
-                            style={{ padding: "10px", borderRadius: "50%" }}
-                        />{" "}
-                        {likes} Likes
-                    </h3>
-                )}
+                        <h3 onClick={toggleLike}>
+                            <i
+                                className="fa fa-thumbs-up text-warning bg-dark"
+                                style={{ padding: "10px", borderRadius: "50%" }}
+                            />{" "}
+                            {likes} Likes
+                        </h3>
+                    )}
 
                 <p className="card-text mt-4 lead">{post.body}</p>
                 <p className="font-italic mark mb-4 lead">

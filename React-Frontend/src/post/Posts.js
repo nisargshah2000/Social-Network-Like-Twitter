@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { list } from "./apiPost";
-import DefaultPostImage from "../images/himalaya.jpg";
+import DefaultPostImage from "../images/twitter.jpg";
 import { Link } from "react-router-dom";
 
 function Posts() {
@@ -56,9 +56,9 @@ function Posts() {
                                     }}
                                     src={`${
                                         process.env.REACT_APP_API_URL
-                                    }/post/photo/${
+                                        }/post/photo/${
                                         post._id
-                                    }?${new Date().getTime()}`}
+                                        }?${new Date().getTime()}`}
                                     onError={(i) =>
                                         (i.target.src = `${DefaultPostImage}`)
                                     }
@@ -105,8 +105,8 @@ function Posts() {
                 {loading
                     ? "Loading..."
                     : !posts.length
-                    ? "No more posts!"
-                    : "Recent Posts"}
+                        ? "No more posts!"
+                        : "Recent Posts"}
             </h2>
             {renderPosts()}
             {page > 1 ? (
@@ -117,8 +117,8 @@ function Posts() {
                     Previous
                 </button>
             ) : (
-                ""
-            )}
+                    ""
+                )}
 
             {posts.length ? (
                 <button
@@ -128,8 +128,8 @@ function Posts() {
                     Next
                 </button>
             ) : (
-                ""
-            )}
+                    ""
+                )}
         </div>
     );
 }
